@@ -1,0 +1,51 @@
+<app-header-breadcrumb [title]="'Products'" [items]="['ECommerce']" [active_item]="'Products'"></app-header-breadcrumb>
+<!-- ROW-1 OPEN -->
+<div class="row row-cards">
+    <div class="col-xl-2 col-lg-2">
+
+    </div><!-- COL-END -->
+    <div class="col-xl-9 col-lg-8">
+        <div class="row">
+            <div class="col-md-6 col-xl-4">
+                <div class="card item-card">
+                    <div class="product-grid6  card-body ">
+                        <div class="product-image6">
+                            <a routerLink="/ecommerce/product-details">
+                                <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7U4cxdKI4IYjLlK-9J75gIe92PsGePRpRg&usqp=CAU" alt="img">
+                            </a>
+                        </div>
+                        <div class="product-content text-center">
+                            <div class="text-center mb-2 text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <h4 class="title"><a href="javascript:;">Flower Pot</a></h4>
+                            <div class="price">$277<span class="ms-4">$456</span></div>
+                        </div>
+                        <ul class="icons">
+                            <li><a routerLink="/ecommerce/product-details" data-tip="Quick View"><i
+                                        class="fe fe-eye "></i></a>
+                            </li>
+                            <li><a routerLink="/ecommerce/wishlist" data-tip="Add to Wishlist"><i
+                                        class="fa fa-heart-o"></i></a>
+                            </li>
+                            <li><a routerLink="/ecommerce/shopping-cart" data-tip="Add to Cart"><i
+                                        class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mb-5">
+                <div class="float-end">
+
+                    <ngb-pagination [collectionSize]="50" [(page)]="basicPage"
+                        aria-label="Default pagination"></ngb-pagination>
+                </div>
+            </div>
+        </div><!-- COL-END -->
+    </div>
+    <!-- ROW-1 CLOSED -->

@@ -1,0 +1,109 @@
+<!--APP-SIDEBAR-->
+<div class="app-sidebar__overlay" (click)="sidebarClose()"></div>
+<!-- Sidemenu -->
+<aside class="app-sidebar">
+    <div class="side-header">
+        <a class="header-brand1" routerLink="/dashboard">
+            <img src="data:image/jpeg;base64,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" class="header-brand-img desktop-logo" alt="logo">
+            <img src="" class="header-brand-img toggle-logo" alt="logo">
+            <img src="" class="header-brand-img light-logo" alt="logo">
+            <img src="data:image/jpeg;base64,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" class="header-brand-img light-logo1" alt="logo">
+        </a>
+    </div>
+    <perfect-scrollbar>
+        <ul class="side-menu">
+            <!-- 1st Level Menu -->
+            <li class="slide" *ngFor="let menuItem of menuItems" 
+                [ngClass]="{active: menuItem.active, 'is-expanded': menuItem.active}">
+                <div *ngIf="menuItem.headTitle">
+                    <h3 >{{menuItem.headTitle}}</h3>
+                </div>
+                <!-- has-Link -->
+                <a class="side-menu__item" [routerLink]="!menuItem.type ? null : [menuItem.path]" 
+                    *ngIf="menuItem.type === 'link' " 
+                    routerLinkActive="active"
+                    (click)="toggleNavActive(menuItem)">
+                    <span class="shape1"></span>
+                    <span class="shape2"></span>
+                    <i class="fe fe-{{menuItem.icon}} side-menu__icon"></i>
+                    <span class="side-menu__label">{{menuItem.title}}</span>
+                </a>
+                <!-- has-Sub -->
+                <a class="side-menu__item" [routerLink]="menuItem.type ? null: [menuItem.path]"
+                     *ngIf="menuItem.type === 'sub'" 
+                     (click)="toggleNavActive(menuItem)"
+                     [ngClass]="{'active': menuItem.active}">
+                    <span class="shape1"></span>
+                    <span class="shape2"></span>
+                    <i class="fe fe-{{menuItem.icon}} side-menu__icon"></i>
+                    <span class="side-menu__label">{{menuItem.title}}</span>
+                    <span class="badge bg-{{menuItem.badgeClass}} side-badge"
+                        *ngIf="menuItem.badgeClass && menuItem.badgeValue">
+                        {{menuItem.badgeValue}}
+                    </span>
+                    <i class="angle fe fe-chevron-right" [ngClass]="{ 'd-none': menuItem.badgeClass}"></i>
+
+                </a>
+
+                <!-- 2nd Level menu -->
+                <ul class="slide-menu" *ngIf="menuItem.children"
+                    [ngClass]="{'open': menuItem.active}">
+                    <li class="slide" *ngFor="let childrenItem of menuItem.children"
+                        [ngClass]="{'is-expanded': childrenItem.active}">
+
+                        <!-- link -->
+                        <a class="slide-item" routerLinkActive="active" [routerLink]="!childrenItem.type ? null : [childrenItem.path] "
+                            *ngIf="childrenItem.type === 'link' " (click)="toggleNavActive(childrenItem)">
+                            {{childrenItem.title}}
+                        </a>
+
+                        <!-- sub -->
+                        <a class="slide-item" [routerLink]="childrenItem.type ? null : [childrenItem.path]"
+                                *ngIf="childrenItem.type === 'sub' "
+                            (click)="toggleNavActive(childrenItem)">
+                            {{childrenItem.title}}
+                            <i class="angle fe fe-chevron-right"></i>
+                        </a>
+
+                        <!-- 3rd Level menu -->
+                        <ul class="slide-menu" *ngIf="childrenItem.children"
+                        [ngClass]="{'open': childrenItem.active}">
+                            <li class="slide" *ngFor="let childrenSubItem of childrenItem.children"
+                            [ngClass]="{'is-expanded': childrenSubItem.active}">
+                                <!-- link -->
+                                <a class="slide-item"
+                                    [routerLink]="!childrenSubItem.type ?  [childrenSubItem.path] : null"
+                                    *ngIf="childrenSubItem.type === 'link'" routerLinkActiveOptions="{exact : true}">
+                                    {{childrenSubItem.title}}
+                                </a>
+                                <!-- sub -->
+                                <a class="slide-item"
+                                    [routerLink]="childrenSubItem.type ? null : [childrenSubItem.path]"
+                                    *ngIf="childrenSubItem.type === 'sub' " (click)="toggleNavActive(childrenSubItem)">
+                                    {{childrenSubItem.title}}
+                                    <i class="angle fe fe-chevron-right"></i>
+                                </a>
+
+                                <!--4th level -->
+                                <ul class="slide-menu" *ngIf="childrenSubItem.children">
+                                    <li class="slide" *ngFor="let childrenSubItem1 of childrenSubItem.children"
+                                    [ngClass]="{'is-expanded': childrenSubItem1.active}">
+                                        <a class="slide-item" [routerLink]="!childrenSubItem1.type ? [childrenSubItem1.path] : null "
+                                        *ngIf="childrenSubItem1.type === 'link'">
+                                        {{childrenSubItem1.title}}</a>
+                                    </li>
+                                </ul>
+
+
+
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </perfect-scrollbar>
+</aside>
+<!-- End Sidemenu -->
