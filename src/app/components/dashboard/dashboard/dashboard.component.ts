@@ -20,7 +20,7 @@ interface dashboardTable {
 export class DashboardComponent implements OnInit {
 
   objectArray: dashboardTable[] | any;
-  constructor() { 
+  constructor() {
     this.objectArray = [
       { id: 1, image: "../../assets/images/users/11.jpg", name : "Jake poole", email : "jacke123@gmail.com", amount:'$5.321.2', date :'20-11-2020', status: 'Success', statusText: 'success'},
       { id: 2, image: "../../assets/images/users/1.jpg", name : "Virginia Gray", email : "virginia456@gmail.com", amount:'$53,3654', date : '20-11-2020', status: 'Success', statusText: 'success' },
@@ -35,16 +35,16 @@ export class DashboardComponent implements OnInit {
   }
   ngOnInit(): void {
   }
-  
-  
+
+
   RemoveElementFromObjectArray(key: any) {
     this.objectArray.forEach((value,index)=>{
         if(value.id==key) this.objectArray.splice(index,1);
     });
-  } 
+  }
 
   public orderData = dashboardData.OrderData;
-  
+
   public lineChartOptions = dashboardData.lineChartOptions;
   public lineChartLabels = dashboardData.lineChartLabels;
   public lineChartType = dashboardData.lineChartType;
