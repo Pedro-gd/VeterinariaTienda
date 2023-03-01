@@ -9,12 +9,12 @@ body {
 }
 
 .font-color-general {
-	color: rgb(67, 105, 176);
+	color: rgb(96, 67, 176);
 }
 
 .brand-name {
 	font-size: 1.8rem;
-	color: rgb(67, 105, 176);
+	color: rgb(96, 67, 176);
 	margin-left: 2rem;
 }
 
@@ -30,7 +30,7 @@ body {
 } */
 
 .bg-color-azul {
-	background-color: rgb(67, 105, 176);
+	background-color: rgb(97, 72, 155);
 }
 
 .hrblanco {
@@ -49,7 +49,7 @@ body {
 
 	.brand-name {
 		font-size: 1.8rem;
-		color: rgb(67, 105, 176);
+		color: rgb(151, 67, 176);
 		margin-left: 1rem;
 	}
 

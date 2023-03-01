@@ -61,15 +61,15 @@ export class NavService implements OnDestroy {
         this.unsubscriber.next();
         this.unsubscriber.complete();
     }
-    
+
     private setScreenWidth(width: number): void {
         this.screenWidth.next(width);
     }
-    
+
     MENUITEMS: Menu[] = [
-        { headTitle: 'Proncipal' },
+        { headTitle: 'Principal' },
         {
-            path: '/dashboard', title: 'Veterinaria tu amigo', type: 'link', icon: 'home', badgeType: 'danger', badgeValue: 'Hot', active: false
+            path: '/dashboard', title: 'Veterinaria Amor Animal', type: 'link', icon: 'home', badgeType: 'danger', badgeValue: 'Hot', active: false
         },
 
 
@@ -83,23 +83,24 @@ export class NavService implements OnDestroy {
             ]
         },
 
-        
+
         { headTitle: 'Adopta una mascota' },
         {
 
                 // { path: '/pages/profile', title: 'Profile', type: 'link' },
-                path: '/pages/blog', title: 'Ver mascotas', type: 'link', icon: 'info'
-            
+                path: '/pages/blog', title: 'Ver mascotas', type: 'link', icon: 'heart'
+
+
         },
 
-      
-        
+
+
     { headTitle: 'Citas' },
         {
-            path: '/forms/form-elements', title: 'Generar Cita', type: 'link', icon: 'info'
+            path: '/forms/form-elements', title: 'Generar Cita', type: 'link', icon: 'book'
         },
 
-                
+
         { headTitle: 'ERROR PAGES' },
         {
             title: 'Error Pages', icon: 'info', type: 'sub', active: false,
@@ -111,7 +112,7 @@ export class NavService implements OnDestroy {
                 { path: '/error/error500', title: '500', type: 'link' },
                 { path: '/error/error503', title: '503', type: 'link' },
             ]
-        }        
+        }
     ];
 
     //array

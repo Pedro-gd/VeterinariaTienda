@@ -93,7 +93,7 @@ export class SweetAlertsComponent implements OnInit {
    Swal.fire({
      title: 'Lovely',
      text: 'Your image is uploaded.',
-     imageUrl: '../../assets/images/brand/logo-3.png',
+     imageUrl: '',
      confirmButtonColor: '#7367f0'
    })
  }

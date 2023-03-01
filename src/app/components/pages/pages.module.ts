@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
@@ -16,7 +16,7 @@ import { BlogComponent } from './blog/blog.component';
 import { EmptyPagesComponent } from './empty-pages/empty-pages.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { GalleryModule } from '@ks89/angular-modal-gallery';  
+import { GalleryModule } from '@ks89/angular-modal-gallery';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
@@ -32,6 +32,9 @@ import { PrintEditComponent } from './print-edit/print-edit.component';
 import { PrintCreateComponent } from './print-create/print-create.component';
 import { PrintRemuveComponent } from './print-remuve/print-remuve.component';
 import { SendPrintComponent } from './send-print/send-print.component';
+import { Detalles2Component } from './detalles2/detalles2.component';
+import { AdopcionComponent } from './adopcion/adopcion.component';
+
 
 
 
@@ -62,7 +65,10 @@ import { SendPrintComponent } from './send-print/send-print.component';
     PrintCreateComponent,
     PrintRemuveComponent,
     SendPrintComponent,
-  
+    Detalles2Component,
+    AdopcionComponent,
+
+
   ],
   imports: [
     CommonModule,
@@ -72,10 +78,11 @@ import { SendPrintComponent } from './send-print/send-print.component';
     NgSelectModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule   
+    ReactiveFormsModule
   ],
- 
+
   // bootstrap:[AppComponent]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
 })
 export class PagesModule { }

@@ -24,6 +24,8 @@ import { PrintEditComponent } from './print-edit/print-edit.component';
 import { PrintCreateComponent } from './print-create/print-create.component';
 import { PrintRemuveComponent } from './print-remuve/print-remuve.component';
 import { SendPrintComponent } from './send-print/send-print.component';
+import { AdopcionComponent } from './adopcion/adopcion.component';
+import { Detalles2Component } from './detalles2/detalles2.component';
 
 const routes: Routes = [
   {
@@ -40,6 +42,14 @@ const routes: Routes = [
       {
         path: 'blog-details',
         component: BlogDetailsComponent
+      },
+      {
+        path: 'adopcion',
+        component: AdopcionComponent
+      },
+      {
+        path: 'detalles2',
+        component: Detalles2Component
       },
       {
         path: 'edit-etiqueta',
@@ -123,9 +133,9 @@ const routes: Routes = [
       }
 
 
-    
-    
-    
+
+
+
     ]
   }
 
