@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ShopComponent } from './shop/shop.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ShoppingCartComponent } from 'src/app/components/e-commerce/shopping-cart/shopping-cart.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ECommerceoutingModule } from './e-commerce-routing.module';

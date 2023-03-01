@@ -1,7 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
@@ -13,6 +12,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './authentication/register/register.component';
 import { LoginPageComponent } from './authentication/login-page/login-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbPaginationModule,  } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 
 
@@ -34,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     AngularFireStorageModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent],
