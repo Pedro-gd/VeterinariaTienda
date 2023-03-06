@@ -10,7 +10,7 @@ import { ListComponent } from '../components/elements/list/list.component';
 })
 export class VeterinariaService {
 
-  private backendURL: string = "http://localhost:8080/producto/";
+  private backendURL: string = "http://localhost:8081/producto/";
 
   constructor(
     private httpClient: HttpClient

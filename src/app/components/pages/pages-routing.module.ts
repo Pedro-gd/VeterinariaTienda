@@ -26,6 +26,10 @@ import { PrintRemuveComponent } from './print-remuve/print-remuve.component';
 import { SendPrintComponent } from './send-print/send-print.component';
 import { AdopcionComponent } from './adopcion/adopcion.component';
 import { Detalles2Component } from './detalles2/detalles2.component';
+import { Detalles3Component } from './detalles3/detalles3.component';
+import { Detalles4Component } from './detalles4/detalles4.component';
+import { Detalles5Component } from './detalles5/detalles5.component';
+import { Detalles6Component } from './detalles6/detalles6.component';
 
 const routes: Routes = [
   {
@@ -50,6 +54,22 @@ const routes: Routes = [
       {
         path: 'detalles2',
         component: Detalles2Component
+      },
+      {
+        path: 'detalles3',
+        component: Detalles3Component
+      },
+      {
+        path: 'detalles4',
+        component: Detalles4Component
+      },
+      {
+        path: 'detalles5',
+        component: Detalles5Component
+      },
+      {
+        path: 'detalles6',
+        component: Detalles6Component
       },
       {
         path: 'edit-etiqueta',

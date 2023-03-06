@@ -34,6 +34,10 @@ import { PrintRemuveComponent } from './print-remuve/print-remuve.component';
 import { SendPrintComponent } from './send-print/send-print.component';
 import { Detalles2Component } from './detalles2/detalles2.component';
 import { AdopcionComponent } from './adopcion/adopcion.component';
+import { Detalles3Component } from './detalles3/detalles3.component';
+import { Detalles4Component } from './detalles4/detalles4.component';
+import { Detalles5Component } from './detalles5/detalles5.component';
+import { Detalles6Component } from './detalles6/detalles6.component';
 
 
 
@@ -67,6 +71,10 @@ import { AdopcionComponent } from './adopcion/adopcion.component';
     SendPrintComponent,
     Detalles2Component,
     AdopcionComponent,
+    Detalles3Component,
+    Detalles4Component,
+    Detalles5Component,
+    Detalles6Component,
 
 
   ],
