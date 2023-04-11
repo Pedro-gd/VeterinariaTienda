@@ -95,12 +95,20 @@ export class NavService implements OnDestroy {
 
 
 
+
     { headTitle: 'Citas' },
         {
             path: '/forms/form-elements', title: 'Generar Cita', type: 'link', icon: 'book'
         },
 
+        { headTitle: 'Mapa del Sitio' },
+        {
 
+                // { path: '/pages/profile', title: 'Profile', type: 'link' },
+                path: '/pages/mapa-sitio', title: 'Mapa del Sitio', type: 'link', icon: 'map'
+
+
+        },
         { headTitle: 'ERROR PAGES' },
         {
             title: 'Error Pages', icon: 'info', type: 'sub', active: false,

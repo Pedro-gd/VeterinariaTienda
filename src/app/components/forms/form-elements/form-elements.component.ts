@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-form-elements',
@@ -11,5 +12,14 @@ export class FormElementsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  public confirmAdd(){
 
+    Swal.fire({
+      icon: "success",
+      title: "Proceso de cita exitoso",
+      showConfirmButton: false,
+      timer: 1500,
+});
+
+}
 }

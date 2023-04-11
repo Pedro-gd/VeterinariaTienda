@@ -7,6 +7,8 @@ import { ChartsModule } from 'ng2-charts';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ChartsModule,
     SharedModule,
     FormsModule, ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    IvyCarouselModule,
   ]
 })
 export class DashboardModule { }

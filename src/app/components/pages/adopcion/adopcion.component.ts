@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-adopcion',
@@ -11,5 +12,14 @@ export class AdopcionComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  public confirmAdd(){
 
+      Swal.fire({
+        icon: "success",
+        title: "Su proceso de adopción fue exitoso, espere indicaciones!",
+        showConfirmButton: false,
+        timer: 1500,
+  });
+
+  }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as dashboardData from '../../../shared/data/dashboard/dashboard';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 interface dashboardTable {
   id: number;
@@ -15,12 +16,21 @@ interface dashboardTable {
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css',]
+  styleUrls: ['./dashboard.component.css'],
+  providers: [NgbCarouselConfig]
 })
 export class DashboardComponent implements OnInit {
 
+  images = [700, 800, 807].map((n) => `https://picsum.photos/id/${n}/900/500`);
+
+
+
   objectArray: dashboardTable[] | any;
-  constructor() {
+  constructor(config: NgbCarouselConfig) {
+
+    config.interval = 2000;
+    config.keyboard = true;
+    config.pauseOnHover = true;
     this.objectArray = [
       { id: 1, image: "../../assets/images/users/11.jpg", name : "Jake poole", email : "jacke123@gmail.com", amount:'$5.321.2', date :'20-11-2020', status: 'Success', statusText: 'success'},
       { id: 2, image: "../../assets/images/users/1.jpg", name : "Virginia Gray", email : "virginia456@gmail.com", amount:'$53,3654', date : '20-11-2020', status: 'Success', statusText: 'success' },

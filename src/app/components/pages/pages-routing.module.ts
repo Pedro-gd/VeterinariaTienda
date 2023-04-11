@@ -30,6 +30,7 @@ import { Detalles3Component } from './detalles3/detalles3.component';
 import { Detalles4Component } from './detalles4/detalles4.component';
 import { Detalles5Component } from './detalles5/detalles5.component';
 import { Detalles6Component } from './detalles6/detalles6.component';
+import { MapaSitioComponent } from './mapa-sitio/mapa-sitio.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
       {
         path: 'blog-details',
         component: BlogDetailsComponent
+      },
+      {
+        path: 'mapa-sitio',
+        component: MapaSitioComponent
       },
       {
         path: 'adopcion',
