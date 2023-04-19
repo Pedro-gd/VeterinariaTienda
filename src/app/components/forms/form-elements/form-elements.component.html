@@ -4,63 +4,53 @@
 </ul>
 <br>
 <div class="row">
-
-    <div class="col-lg-12 col-md-12">
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">Citas</h3>
-            </div>
-            <div class="card-body pt-2">
-              <label class="form-label">Nombre del dueño</label>
+  <div class="col-lg-12 col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Citas</h3>
+      </div>
+      <div class="card-body pt-2">
+        <form #citaForm="ngForm">
+          <label class="form-label">Nombre del dueño</label>
           <div class="form-group">
             <div class="input-icon">
               <span class="input-icon-addon">
-                <i class="fe fe-user"></i>
+
               </span>
-              <input type="text" class="form-control" placeholder="Nombre">
+              <input type="text" class="form-control" placeholder="Nombre" name="nombre">
             </div>
           </div>
-          <div>
 
+          <div class="form-group">
+            <label class="form-label">Servicio</label>
+            <ng-select name="id_servicio" class="form-control form-select custom-select" placeholder="Servicio">
+              <ng-option *ngFor="let servicio of servicios" [value]="servicio">{{servicio.descripcion}}</ng-option>
+            </ng-select>
           </div>
-                <div class="form-group">
-                    <label class="form-label">Servicio</label>
-                    <ng-select name="servicio" class="form-control form-select custom-select"
-                          placeholder="Servicio">
-                        <!-- <ng-option label="Select Country"></ng-option> -->
-                        <ng-option value="br">Nutrición</ng-option>
-                        <ng-option value="cz">Chequeo General</ng-option>
-                        <ng-option value="de">Masaje</ng-option>
-                        <ng-option value="me">Cita medica especifica</ng-option>
-                        <ng-option value="pl">Limpieza y peluqueria</ng-option>
-                    </ng-select>
-                </div>
+          <label class="form-label">Raza de la mascota</label>
+          <div class="form-group">
+            <div class="input-icon">
+              <span class="input-icon-addon">
 
-                <div class="form-group">
-                    <label class="form-label">Mascota</label>
-                    <ng-select name="mascota" class="form-control form-select custom-select"
-                    placeholder="Mascota">
-                        <!-- <ng-option label="Select Country"></ng-option> -->
-                        <ng-option value="br">Perro</ng-option>
-                        <ng-option value="cz">Gato</ng-option>
-                        <ng-option value="de">Roedor</ng-option>
-                        <ng-option value="me">Ave</ng-option>
-                        <ng-option value="pl">Reptil</ng-option>
-                    </ng-select>
-                </div>
-                <div class="card-body pt-2">
-                  <label class="form-label">Nombre de la mascota</label>
-              <div class="form-group">
-                  <span class="input-icon-addon">
-                    <i class="fe fe-user"></i>
-                  </span>
-                  <input type="text" class="form-control" placeholder="Nombre de la Mascota">
-
-              </div>
+              </span>
+              <input type="text" class="form-control" placeholder="raza de mascota" name="raza_mascota">
             </div>
-
-            <button (click)="confirmAdd()" class="btn btn-primary" type="submit">Enviar formulario</button>
         </div>
+
+          <div class="card-body pt-2">
+            <label class="form-label">Nombre de la mascota</label>
+            <div class="form-group">
+              <span class="input-icon-addon">
+                
+              </span>
+              <input type="text" class="form-control" placeholder="Nombre de la Mascota" name="nom_mascota">
+            </div>
+          </div>
+
+          <a (click)="saveCita()" class="btn btn-primary" type="submit">Enviar formulario</a>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
 <!-- End Row -->

@@ -7,8 +7,8 @@ export class Adopcion{
   edad: number;
   direccion: string;
   ciudad: string;
-  codigoPostal: string;
-  mascota: Mascota;
+  codigo_postal: string;
+  id_mascota: Mascota;
 
 
 }
